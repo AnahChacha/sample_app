@@ -1,5 +1,5 @@
-#ifndef MYPROJECT_LOGO_FONTS_H
-#define MYPROJECT_LOGO_FONTS_H
+#ifndef sample_app_LOGO_FONTS_H
+#define sample_app_LOGO_FONTS_H
 
 //----------------------------------------
 //  92 x 24
@@ -28,4 +28,4 @@ const unsigned char ICBCLOGO[276] =
     0x00, 0x00, 0x00, 0x00
   };
 // clang-format on
-#endif// MYPROJECT_LOGO_FONTS_H
+#endif// sample_app_LOGO_FONTS_H

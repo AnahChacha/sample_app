@@ -1,5 +1,0 @@
-# %%myproject%%
-
-## About %%myproject%%
-%%description%%
-

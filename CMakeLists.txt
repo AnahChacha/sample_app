@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.16.0 FATAL_ERROR)
 
 project(
-        myproject
+        sample_app
         VERSION 0.0.1
-        DESCRIPTION "%%description%%"
-        HOMEPAGE_URL  "%%myurl%%"
+        DESCRIPTION ""
+        HOMEPAGE_URL  "https://github.com/AnahChacha/sample_app"
         LANGUAGES C
 )
 
@@ -59,10 +59,10 @@ include(CMake/GlobalSettingsInclude.cmake OPTIONAL)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 # Sub-projects
-add_subdirectory(myproject)
+add_subdirectory(sample_app)
 
 # configure the solution template
 include(CMake/Generators.cmake)
-generate_sln_file(myproject.sln.in  ${PROJECT_NAME})
+generate_sln_file(sample_app.sln.in  ${PROJECT_NAME})
 
 

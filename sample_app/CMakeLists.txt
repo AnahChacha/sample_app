@@ -1,4 +1,4 @@
-set(PROJECT_NAME myproject)
+set(PROJECT_NAME sample_app)
 
 # Source groups
 set(header_group_files
@@ -18,7 +18,7 @@ set(ALL_FILES
 add_executable(${PROJECT_NAME} ${ALL_FILES})
 
 use_props(${PROJECT_NAME} "${CMAKE_CONFIGURATION_TYPES}" "${DEFAULT_CXX_PROPS}")
-set(ROOT_NAMESPACE myproject)
+set(ROOT_NAMESPACE sample_app)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
     VS_GLOBAL_KEYWORD "Win32Proj"
@@ -97,4 +97,4 @@ target_link_directories(${PROJECT_NAME} PRIVATE
 
 # Configure vcproj template
 include(../CMake/Generators.cmake)
-generate_vcproj_file(myproject.vcxproj.in  "${header_group_files}" "${source_group_files}")
+generate_vcproj_file(sample_app.vcxproj.in  "${header_group_files}" "${source_group_files}")
