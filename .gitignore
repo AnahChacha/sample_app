@@ -1,0 +1,10 @@
+/Debug
+/build
+/cmake-build-debug-visual-studio
+/.idea
+*.sln
+*.vcxproj
+*.vcxproj.*
+
+# inclue .vcproj.in
+!*.vcxproj.in
